@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Complex Gradient Stacked Area Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <canvas id="myChart"></canvas>
+    <script>
+      // Define chart data
+      const data = {
+        labels: ['天冬氨酸', '干物质', '总磷', '有效磷', '灰分', '粗纤维', '粗脂肪','粗蛋白','蛋氨酸 ','赖氨酸','钙'],
+        datasets: [
+          {
+            label: 'Phase_1_feed',
+            data: [1.8, 88.56, 0.53, 0.3, 4.86, 2.73, 5.43,18,0.36,1.09,0.6],
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderColor: 'rgba(255, 99, 132, 1)',
+            borderWidth: 1
+          },
+          {
+            label: 'Phase_2_feed',
+            data: [1.55, 86.61, 0.44, 0.25, 4.81, 3.27, 4.62,16.2,0.43,1.08,0.65],
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 1
+          },
+          {
+            label: 'Phase_3_feed',
+            data: [1.36, 86.58, 0.5, 0.3, 4.7, 3.31, 4.26,15.5,0.32,0.94,0.6],
+            backgroundColor: 'rgba(255, 206, 86, 0.2)',
+            borderColor: 'rgba(255, 206, 86, 1)',
+            borderWidth: 1
+          },
+        ]
+      };
+
+      // Define chart options
+      const options = {
+        scales: {
+          xAxes: [{
+            stacked: true
+          }],
+          yAxes: [{
+            stacked: true
+          }]
+        }
+      };
+
+      // Create chart
+      const ctx = document.getElementById('myChart').getContext('2d');
+      const myChart = new Chart(ctx, {
+        type: 'line',
+        data: data,
+        options: options
+      });
+    </script>
+  </body>
+</html>

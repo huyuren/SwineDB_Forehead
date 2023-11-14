@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bar Chart</title>
+  <h1>微生物分类</h1>
+	<style>
+		/* 样式表 */
+		.bar {
+			fill: steelblue;
+		}
+
+		.bar:hover {
+			fill: brown;
+		}
+
+		.axis--x path {
+			display: none;
+		}
+
+		.axis--y path,
+		.axis--y line {
+			fill: none;
+			stroke: #000;
+			shape-rendering: crispEdges;
+		}
+
+		.axis text {
+			font-family: sans-serif;
+			font-size: 11px;
+		}
+    h1{
+      text-align: center;
+
+    }
+	</style>
+</head>
+<body>
+	<!-- SVG容器 -->
+	<svg width="1200" height="500"></svg>
+
+	<!-- 引入d3.js库 -->
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+
+	<script>
+		// 数据
+		var data = [
+			{letter: "Phylum", frequency: 0.0341},
+			{letter: "Class", frequency: 0.055},
+			{letter: "Order", frequency: 0.085},
+			{letter: "Family", frequency: 0.1233},
+			{letter: "Genus", frequency: 0.2505},
+			{letter: "Species", frequency: 0.4516},
+			
+		];
+
+		// SVG容器
+		var svg = d3.select("svg"),
+			margin = {top: 20, right: 20, bottom: 30, left: 40},
+			width = +svg.attr("width") - margin.left - margin.right,
+			height = +svg.attr("height") - margin.top - margin.bottom,
+			g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+		// 比例尺
+		var x = d3.scaleBand().rangeRound([0, width]).padding(0.1),
+			y = d3.scaleLinear().rangeRound([height, 0]);
+
+		// 坐标轴
+		var xAxis = d3.axisBottom(x),
+			yAxis = d3.axisLeft(y).ticks(10, "%");
+
+		// 数据处理
+		x.domain(data.map(function(d) { return d.letter; }));
+		y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
+
+		// 添加x轴
+		g.append("g")
+			.attr("class", "axis axis--x")
+			.attr("transform", "translate(0," + height + ")")
+			.call(xAxis);
+
+		// 添加y轴
+		g.append("g")
+			.attr("class", "axis axis--y")
+			.call(yAxis)
+			.append("text")
+			.attr("transform", "rotate(-90)")
+			.attr("y", 6)
+			.attr("dy", "0.71em")
+			.attr("text-anchor", "end")
+			.text("Frequency");
+
+		// 添加条形图
+		g.selectAll(".bar")
+			.data(data)
+			.enter().append("rect")
+			.attr("class", "bar")
+			.attr("x", function(d) { return x(d.letter); })
+			.attr("y", function(d) { return y(d.frequency); })
+			.attr("width", x.bandwidth())
+			.attr("height", function(d) { return height - y(d.frequency); });
+	</script>
+</body>
+</html>

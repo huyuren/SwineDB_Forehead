@@ -1,0 +1,740 @@
+@import 'datatables.net-dt';
+
+.browse-bg {
+    position: absolute;
+    left: 75px;
+    top: 174px;
+    width: 1759px;
+    height: 505px;
+    opacity: 1;
+    border-radius: 47px;
+    background: rgba(229, 229, 229, 0.3);
+}
+
+.samples {
+    position: absolute;
+    left: 147px;
+    top: 218px;
+    width: 178.41px;
+    height: 36.61px;
+    opacity: 1;
+    /** 文本1 */
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 34.75px;
+    text-align: left;
+    vertical-align: top;
+    transition: background-color 0.3s ease;
+}
+
+.line1 {
+    position: absolute;
+    left: 158px;
+    top: 260px;
+    width: 180px;
+    height: 3px;
+    opacity: 1;
+
+    transition: background-color 0.3s ease;
+}
+
+.line2 {
+    position: absolute;
+    left: 338px;
+    top: 260px;
+    width: 150px;
+    height: 3px;
+    opacity: 1;
+
+    transition: background-color 0.3s ease;
+}
+
+
+.samples :hover {
+    color: rgba(28, 104, 61, 1);
+}
+
+.samples :focus {
+    color: rgba(0, 0, 0, 1);
+}
+
+/* .samples:hover {color:rgba(0, 0, 0, 1);}
+
+.samples:focus { background-color: transparent !important; color: inherit; } */
+
+.projects-form {
+    position: absolute;
+    left: 75px;
+    top: 288px;
+    width: 1759px;
+    height: 505px;
+    opacity: 1;
+}
+
+.projects-form-country {
+    position: absolute;
+    left: 241px;
+    top: 3px;
+    width: 74px;
+    height: 22px;
+    opacity: 1;
+    /** 文本1 */
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: left;
+    vertical-align: top;
+}
+
+.browse-projects {
+    position: absolute;
+    left: 290px;
+    top: 218px;
+    width: 178.41px;
+    height: 36.61px;
+    opacity: 1;
+    /** 文本1 */
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 34.75px;
+    transition: background-color 0.3s ease;
+    text-align: left;
+    vertical-align: top;
+}
+
+.browse-projects :hover {
+    color: rgba(28, 104, 61, 1);
+}
+
+.projects-form .el-checkbox__input {
+    width: 16px;
+    height: 16px;
+
+
+}
+
+.projects-form .el-checkbox__label {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.projects-form .el-checkbox-group {
+    position: absolute;
+    left: 400px;
+    top: 0px;
+}
+
+.projects-form .el-checkbox-group .el-checkbox {
+    margin-right: 130px;
+}
+
+.projects-form .el-checkbox__inner {
+    width: 16px;
+    height: 16px;
+    border-color: rgba(0, 126, 55, 1) !important;
+}
+
+.projects-form .el-checkbox__input.is-checked .el-checkbox__inner {
+    background-color: rgba(0, 126, 55, 1) !important;
+}
+
+.projects-form .el-checkbox__input.is-checked+.el-checkbox__label {
+    color: rgba(0, 126, 55, 1) !important;
+}
+
+.other-country {
+    position: absolute;
+    left: 1480px;
+    top: 0px;
+}
+
+.other-country .el-select__caret {
+    color: white !important;
+}
+
+.other-country .el-input {
+
+    width: 178px;
+    height: 40px;
+}
+
+.other-country .el-input__wrapper {
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+    background-color: rgba(0, 126, 55, 0.65);
+}
+
+
+.other-country .el-input__inner {
+    &::placeholder {
+        position: relative;
+        font-family: "Noto Sans SC";
+        color: rgba(255, 255, 255, 1) !important;
+        font-size: 18px;
+        font-weight: 400;
+
+    }
+
+    position: relative;
+    left: 6px;
+    font-family: "Noto Sans SC";
+    color: rgba(255, 255, 255, 1) !important;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+// .other-country .el-select__input, .other-country .el-input{ background-color: rgba(0, 126, 55, 1) ;
+//   border: 1px solid rgba(0, 126, 55, 1) !important; border-radius: 3px;}
+
+//   .other-country .el-input__placeholder {
+//     font-family: "Noto Sans SC";
+//     font-size: 10px;
+//     font-weight: 400;
+//     letter-spacing: 0px;
+//     line-height: 22px;
+//     color: rgba(190, 38, 38, 0.8);
+//     text-align: left;
+//     vertical-align: top; 
+// }
+
+.projects-boar {
+    position: absolute;
+    left: 26px;
+    top: 8px;
+    width: 53px;
+    height: 24px;
+    opacity: 1;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.85);
+    text-align: left;
+    vertical-align: top;
+    z-index: 2;
+}
+
+.projects-boar-bg {
+    position: absolute;
+    left: 231px;
+    top: 51px;
+    width: 256px;
+    height: 232px;
+    opacity: 1;
+    background: rgba(186, 182, 182, 1);
+
+
+}
+
+.projects-boar-bg-1 {
+    left: 0px;
+    top: 0px;
+    width: 256px;
+    height: 40px;
+    opacity: 1;
+    background: rgba(255, 255, 255, 1);
+}
+
+.projects-sow {
+    position: absolute;
+    left: 26px;
+    top: 8px;
+    width: 53px;
+    height: 24px;
+    opacity: 1;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.85);
+    text-align: left;
+    vertical-align: top;
+    z-index: 2;
+}
+
+.projects-sow-bg {
+    position: absolute;
+    left: 615px;
+    top: 51px;
+    width: 256px;
+    height: 232px;
+    opacity: 1;
+    background: rgba(186, 182, 182, 1);
+}
+
+.projects-sow-bg-1 {
+    left: 0px;
+    top: 0px;
+    width: 256px;
+    height: 40px;
+    opacity: 1;
+    background: rgba(255, 255, 255, 1);
+}
+
+.projects-piglets {
+    position: absolute;
+    left: 26px;
+    top: 8px;
+    width: 53px;
+    height: 24px;
+    opacity: 1;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.85);
+    text-align: left;
+    vertical-align: top;
+    z-index: 2;
+}
+
+.projects-piglets-bg {
+    position: absolute;
+    left: 999px;
+    top: 51px;
+    width: 256px;
+    height: 232px;
+    opacity: 1;
+    background: rgba(186, 182, 182, 1);
+}
+
+.projects-piglets-bg-1 {
+    left: 0px;
+    top: 0px;
+    width: 256px;
+    height: 40px;
+    opacity: 1;
+    background: rgba(255, 255, 255, 1);
+}
+
+.projects-gf {
+    position: absolute;
+    left: 4px;
+    top: 8px;
+    width: 300px;
+    height: 24px;
+    opacity: 1;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.85);
+    text-align: left;
+    vertical-align: top;
+    z-index: 2;
+}
+
+.projects-gf-bg {
+    position: absolute;
+    left: 1383px;
+    top: 51px;
+    width: 256px;
+    height: 232px;
+    opacity: 1;
+    background: rgba(186, 182, 182, 1);
+}
+
+.projects-gf-bg-1 {
+    left: 0px;
+    top: 0px;
+    width: 256px;
+    height: 40px;
+    opacity: 1;
+    background: rgba(255, 255, 255, 1);
+}
+
+
+.pb-1 {
+    position: absolute;
+    top: 81px;
+    left: 231px;
+    z-index: 2;
+}
+
+.pb-2 {
+    position: absolute;
+    top: 129px;
+    left: 231px;
+    z-index: 2;
+}
+
+.pb-3 {
+    position: absolute;
+    top: 177px;
+    left: 231px;
+    z-index: 2;
+}
+
+.pb-4 {
+    position: absolute;
+    top: 225px;
+    left: 231px;
+    z-index: 2;
+}
+
+.ps-1 {
+    position: absolute;
+    top: 63px;
+    left: 615px;
+    z-index: 2;
+}
+
+.ps-2 {
+    position: absolute;
+    top: 111px;
+    left: 615px;
+    z-index: 2;
+}
+
+.ps-3 {
+    position: absolute;
+    top: 159px;
+    left: 615px;
+    z-index: 2;
+}
+
+.ps-4 {
+    position: absolute;
+    top: 207px;
+    left: 615px;
+    z-index: 2;
+}
+
+.pp-1 {
+    position: absolute;
+    top: 45px;
+    left: 999px;
+    z-index: 2;
+}
+
+.pp-2 {
+    position: absolute;
+    top: 93px;
+    left: 999px;
+    z-index: 2;
+}
+
+.pp-3 {
+    position: absolute;
+    top: 141px;
+    left: 999px;
+    z-index: 2;
+}
+
+.pp-4 {
+    position: absolute;
+    top: 189px;
+    left: 999px;
+    z-index: 2;
+}
+
+.pg-1 {
+    position: absolute;
+    top: 26.5px;
+    left: 1383px;
+    z-index: 2;
+}
+
+.pg-2 {
+    position: absolute;
+    top: 75px;
+    left: 1383px;
+    z-index: 2;
+}
+
+.pg-3 {
+    position: absolute;
+    top: 123px;
+    left: 1383px;
+    z-index: 2;
+}
+
+.pg-4 {
+    position: absolute;
+    top: 171px;
+    left: 1383px;
+    z-index: 2;
+}
+
+
+.el-input {
+    width: 256px;
+    height: 40px;
+}
+
+.el-input__wrapper {
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+
+.el-input__inner {
+    &::placeholder {
+        position: relative;
+        font-family: "Noto Sans SC";
+        color: rgba(0, 0, 0, 1) !important;
+        font-size: 18px;
+        font-weight: 400;
+
+    }
+
+    position: relative;
+    left: 6px;
+    font-family: "Noto Sans SC";
+    color: rgba(0, 0, 0, 1) !important;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.sub {
+    position: absolute;
+    left: 864px;
+    top: 330px;
+    width: 212px;
+    height: 52.17px;
+    opacity: 1;
+    border-radius: 2px;
+    background: rgba(0, 126, 55, 1);
+    font-family: "Noto Sans SC";
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    vertical-align: top;
+}
+
+.samples-form {
+    position: absolute;
+    left: 75px;
+    top: 288px;
+    width: 1759px;
+    height: 505px;
+    opacity: 1;
+}
+
+.samples-boar-bg {
+    position: absolute;
+    left: 180px;
+    top: 20px;
+    width: 256px;
+    height: 232px;
+    opacity: 1;
+    background: rgba(186, 182, 182, 1);
+}
+
+.samples-sow-bg {
+    position: absolute;
+    left: 575px;
+    top: 20px;
+    width: 256px;
+    height: 232px;
+    opacity: 1;
+    background: rgba(186, 182, 182, 1);
+}
+
+.samples-piglets-bg {
+    position: absolute;
+    left: 970px;
+    top: 20px;
+    width: 256px;
+    height: 232px;
+    opacity: 1;
+    background: rgba(186, 182, 182, 1);
+}
+
+.samples-gf-bg {
+    position: absolute;
+    left: 1365px;
+    top: 20px;
+    width: 256px;
+    height: 232px;
+    opacity: 1;
+    background: rgba(186, 182, 182, 1);
+}
+
+.samples-sub {
+    position: absolute;
+    left: 864px;
+    top: 310px;
+    width: 212px;
+    height: 52.17px;
+    opacity: 1;
+    border-radius: 2px;
+    background: rgba(0, 126, 55, 1);
+    font-family: "Noto Sans SC";
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    vertical-align: top;
+}
+
+.sb-1 {
+    position: absolute;
+    top: 68px;
+    left: 180px;
+    z-index: 2;
+}
+
+.sb-2 {
+    position: absolute;
+    top: 116px;
+    left: 180px;
+    z-index: 2;
+}
+
+.sb-3 {
+    position: absolute;
+    top: 164px;
+    left: 180px;
+    z-index: 2;
+}
+
+.sb-4 {
+    position: absolute;
+    top: 212px;
+    left: 180px;
+    z-index: 2;
+}
+
+.ss-1 {
+    position: absolute;
+    top: 50px;
+    left: 575px;
+    z-index: 2;
+}
+
+.ss-2 {
+    position: absolute;
+    top: 98px;
+    left: 575px;
+    z-index: 2;
+}
+
+.ss-3 {
+    position: absolute;
+    top: 146px;
+    left: 575px;
+    z-index: 2;
+}
+
+.ss-4 {
+    position: absolute;
+    top: 194px;
+    left: 575px;
+    z-index: 2;
+}
+
+.sp-1 {
+    position: absolute;
+    top: 32px;
+    left: 970px;
+    z-index: 2;
+}
+
+.sp-2 {
+    position: absolute;
+    top: 80px;
+    left: 970px;
+    z-index: 2;
+}
+
+.sp-3 {
+    position: absolute;
+    top: 128px;
+    left: 970px;
+    z-index: 2;
+}
+
+.sp-4 {
+    position: absolute;
+    top: 176px;
+    left: 970px;
+    z-index: 2;
+}
+
+.sg-1 {
+    position: absolute;
+    top: 14px;
+    left: 1365px;
+    z-index: 2;
+}
+
+.sg-2 {
+    position: absolute;
+    top: 62px;
+    left: 1365px;
+    z-index: 2;
+}
+
+.sg-3 {
+    position: absolute;
+    top: 110px;
+    left: 1365px;
+    z-index: 2;
+}
+
+.sg-4 {
+    position: absolute;
+    top: 158px;
+    left: 1365px;
+    z-index: 2;
+}
+
+.browse-footer {
+    // position: absolute;
+    left: 0px;
+    top: 925px;
+    width: 1920px;
+    height: 155px;
+    opacity: 1;
+    background: rgba(0, 126, 55, 1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Datatable_title {
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.Project_info_title {
+    // left: 776px;
+    // top: 700px;
+    // width: 368px;
+    // height: 56px;
+    opacity: 1;
+    /** 文本1 */
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 52.13px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    vertical-align: top;
+}
+
+.Project_info_description{
+    left: 300px;
+    top: 756px;
+    width: 1432px;
+    height: 527px;
+    margin: auto;
+    opacity: 1;
+    border-radius: 77px;
+    background: rgba(229, 229, 229, 0.3);
+    
+}
